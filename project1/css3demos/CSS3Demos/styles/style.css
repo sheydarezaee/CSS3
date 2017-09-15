@@ -268,7 +268,25 @@ input and forms */
   background-color: #FFFFFF;
 };
 /*-----Selectors of state    ---------*/
+/* ::-webkit-input-placeholder repreents the placeholder text of a form element, 
+that you can customize the appearance of that text and style it */
+
+/*if the data is valid, I want the placeholder to look this way*/
+:valid ::-webkit-input-placeholder {
+  color: #AA5500;
+  font-style: italic;
+}
+
+/*if the data is invalid, I want the placeholder to look this way*/
+:invalid::-webkit-input-placeholder {
+  color: #AA5500;
+  font-style: italic;
+}
+/* so the above basically says that I want the placeholder looks the same whether the data is valid or invalid */
+
+
 /*-----Selectors of state    ---------*/
+
 /*-----Selectors of state    ---------*/
 /*-----Selectors of state    ---------*/
 /*-----Selectors of state    ---------*/
