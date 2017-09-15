@@ -186,6 +186,16 @@ body {
   font-family: DJ, Script;
 }
 
+#title {
+  text-shadow: 0.16em 0.16em 0.5em #AA5500;
+}
+h1, h2 {
+  text-shadow: 0.016em 0.016em 0.25em #AA5500;
+}
+nav a {
+  text-shadow: 0.16em 0.16em 0.16em #FFBB77;
+}
+
 
 
 
