@@ -291,13 +291,10 @@ that you can customize the appearance of that text and style it */
   border-style: dashed;
 }
 
-/*-----Selectors of state    ---------*/
-/*-----Selectors of state    ---------*/
-/*-----Selectors of state    ---------*/
-/*-----Selectors of state    ---------*/
-
-
-
+/*----- article and aside tags    ---------*/
+/* article tag should have independent, self-contained content */
+/* aside tag is for some content aside from the content it is placed in, 
+but should be related to the surrounding content */
 
 
 
