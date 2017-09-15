@@ -185,7 +185,7 @@ body {
 #title, #subtitle {
   font-family: DJ, Script;
 }
-
+/*- text-shadow ----------------------*/
 #title {
   text-shadow: 0.16em 0.16em 0.5em #AA5500;
 }
@@ -195,10 +195,19 @@ h1, h2 {
 nav a {
   text-shadow: 0.16em 0.16em 0.16em #FFBB77;
 }
-
-
-
-
+/*- selectors ----------------------*/
+/* #topics li:first-child is the same as #topics li: nth-child(1); 
+.. and this is not zero based like arrays , (1) is the first child */
+/*to select every second one (2n) --> yeki dar miyoon*/
+#topics li:nth-child(3n) {
+  background-color: #FFBB77;
+}
+#topics li:nth-child(3n-1) {
+  background-color: #FFD4A8;
+}
+#topics li:nth-child(3n-2) {
+  background-color: #FFEDDB;
+}
 
 
 
