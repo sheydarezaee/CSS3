@@ -228,12 +228,13 @@ Z-index: shows stack order of an element, only for elements that have position p
 elements with greater stack order will be positioned ahead of elements with lower stack odrer */
 
 /* #intro is everything that shows, the rest should hide behind it, because of their z-index values */
-article, section #intro {
+article, section, #intro {
   position: absolute;
 }
 #intro {
   z-index: 1;
 }
+/*- selectors  :not and :target ----------------------*/
 /*in the #content section, all items that are directly underneath #content, but exxept the target or #intro */
 #content>*:not(:target,#intro) { /*target referes to target locations in the page that are refernced by anchor tags in the same page */
   z-index: -1;
@@ -241,19 +242,37 @@ article, section #intro {
 :target {
   z-index: 2;
 }
-/*- selectors ----------------------*/
+/*- selectors ::selection ----------------------*/ 
+/* when you select a text, the background color and the color of the text will change because of ::selection selector */;
+::selection {
+  background-color: #FF8811;
+  color: #FFFFFF;
+}
+/*- selectors :root ----------------------*/
+/* it's like body except that it compasses the netire documents */
+:root {
+  background-color: #432100;
+}
 
+/*-----Selectors of State ---------*/
+/*- selectors of state with regard to the data that being provided by teh user
+input and forms */
 
-/*- selectors ----------------------*/
-
-
-/*- selectors ----------------------*/
-
-
-
-
-
-
+/*-----Selectors of state    :required ---------*/
+/*you can precede it with input, that shows all the inputs that are required, so input: required or :required */
+:required {
+  background-color: #FFEDDB;
+}
+/*-----Selectors of state    :valid ---------*/
+:valid {
+  background-color: #FFFFFF;
+};
+/*-----Selectors of state    ---------*/
+/*-----Selectors of state    ---------*/
+/*-----Selectors of state    ---------*/
+/*-----Selectors of state    ---------*/
+/*-----Selectors of state    ---------*/
+/*-----Selectors of state    ---------*/
 
 
 
