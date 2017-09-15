@@ -313,13 +313,21 @@ by using a vendor prefix ..... using caniuse.com lets you to figure out cross-br
 }
 */
 /*-----columns  ---------*/
-/* more about content within an element rather than positioing the element itself */
+/* to have a simple coulumn count for unorderded list of things, 
+more about content within an element rather than positioing the element itself */
 #topics ul {
   -webkit-column-count: 3;
   column-count: 3;
   -webkit-column-gap: 0;
   column-gap:0;
 }
+#about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+}
+
 
 
 
