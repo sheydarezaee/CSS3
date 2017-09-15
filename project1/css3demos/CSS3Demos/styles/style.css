@@ -208,10 +208,46 @@ nav a {
 #topics li:nth-child(3n-2) {
   background-color: #FFEDDB;
 }
+}
+/*- hover ----------------------*/
+#topics li h1 {
+  font-size: 1em;
+}
+#topics li:hover {
+  background-color: #432100;
+  color: #FFEDDB;
+}
+#topics li:hover p {
+  display: inherit;
+  color: #AA5500;
+}
+
+/*- selectors ----------------------*/
+/* with position: absolute, the element can be placed anywhere on the page.
+Z-index: shows stack order of an element, only for elements that have position property already,
+elements with greater stack order will be positioned ahead of elements with lower stack odrer */
+
+/* #intro is everything that shows, the rest should hide behind it, because of their z-index values */
+article, section #intro {
+  position: absolute;
+}
+#intro {
+  z-index: 1;
+}
+/*in the #content section, all items that are directly underneath #content, but exxept the target or #intro */
+#content>*:not(:target,#intro) { /*target referes to target locations in the page that are refernced by anchor tags in the same page */
+  z-index: -1;
+}
+:target {
+  z-index: 2;
+}
+/*- selectors ----------------------*/
 
 
+/*- selectors ----------------------*/
 
 
+/*- selectors ----------------------*/
 
 
 
