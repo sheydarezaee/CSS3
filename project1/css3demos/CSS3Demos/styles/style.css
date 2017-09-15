@@ -284,8 +284,12 @@ that you can customize the appearance of that text and style it */
 }
 /* so the above basically says that I want the placeholder looks the same whether the data is valid or invalid */
 
-
-/*-----Selectors of state    ---------*/
+/*-----Selectors of state  :not and :optional selectors  ---------*/
+/* says if it's not a submit button but anything else and it's optional, make teh border-style, dashed */
+/*input data can be required or optional, based on that we have selectors :required or :optional */;
+:not([type=submit]) :optional {
+  border-style: dashed;
+}
 
 /*-----Selectors of state    ---------*/
 /*-----Selectors of state    ---------*/
