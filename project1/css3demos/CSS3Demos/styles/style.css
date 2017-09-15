@@ -296,10 +296,30 @@ that you can customize the appearance of that text and style it */
 /* aside tag is for some content aside from the content it is placed in, 
 but should be related to the surrounding content */
 
+/*-----Box layout   ---------
+using box-ordinal-group property, you can position elements in the order we choose/want 
+rather than what's in html mark-up */
 
-
-
-
+/*-----vendor prefix    ---------*/
+/* different browssers may implement various aspects of css3 or even their own impemnetations, 
+the way we can designate taht we want to use that feature in that browser before it becomes a standard, is 
+by using a vendor prefix ..... using caniuse.com lets you to figure out cross-browser compatibilities */
+/*
+#content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+}
+*/
+/*-----columns  ---------*/
+/* more about content within an element rather than positioing the element itself */
+#topics ul {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  column-gap:0;
+}
 
 
 
